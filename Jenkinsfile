@@ -3,7 +3,7 @@ pipeline {
   stages {
    stage('Run Hello World') {
     steps {
-        sh 'python3 src/HelloWorld.py'
+        sh 'python3 jenkins/HelloWorld.py'
       }
     }
     stage ('Build') {
