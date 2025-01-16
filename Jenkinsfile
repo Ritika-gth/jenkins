@@ -1,11 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage ('Clone Repo') {
-      steps {
-        echo 'Cloned from repo github.com/Ritika-gth/jenkins.com'
-      }
-    } 
+   stage('Run Hello World') {
+    steps {
+        sh 'python3 src/HelloWorld.py'
+      
+    }
     stage ('Build') {
       steps {
         echo 'Building project...'
