@@ -4,7 +4,7 @@ pipeline {
    stage('Run Hello World') {
     steps {
         sh 'python3 src/HelloWorld.py'
-      
+      }
     }
     stage ('Build') {
       steps {
